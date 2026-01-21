@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #121212;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.calendar-container {
+    width: 360px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header button {
+    font-size: 20px;
+    padding: 8px 14px;
+}
+
+.weekdays, .calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+}
+
+.weekdays div {
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.calendar div {
+    margin: 4px;
+    padding: 14px 0;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.entry {
+    background: red;
+}
+
+.exit {
+    background: orange;
+}
+
+.rest {
+    background: green;
+}
+.legend {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+}
+
+.box {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    display: inline-block;
+}
+.today {
+    border: 3px solid white;
+    box-shadow: 0 0 10px rgba(255,255,255,0.8);
+}
